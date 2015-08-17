@@ -1,41 +1,237 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
-  {% include header.html %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Incident Reports | Lexington.ky.gov</title>
 
-  <body>
+    <!-- Bootstrap core CSS -->
+    <!--<link href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/less/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/css/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
-    <div class="container">
+    <!-- Custom styles for this template -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+    <link href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/css/lexington-styles.min.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="apple-touch-icon" sizes="57x57" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://secure.test.kentucky.gov/Enterprise/demo/lexington/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
 
-      <header role="banner">
-
-        <div class="wrap">
-          {% if site.logourl != null %}
-            <img class="logo" src="{{ site.baseurl }}{{ site.logourl }}" alt="{{ site.logoalt }}" width="75px">
-          {% endif %}
-          <h1 class="site-title"><a class="title-link" href="{{ site.baseurl }}/">[draft] {{ site.name }}</a></h1>
+<body class="homepage">
+    <div class="navbar navbar-top navbar-default">
+        <div class="navbar-inner">
+            <div class="container">
+                <div class="navbar-header pull-left">
+                    <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span style="display: inline; position: relative; right: 5px; font-size: 11px; bottom: 4px;">MENU</span>
+                    </button>
+                    <a class="navbar-brand" href="home.html">
+                        <img alt="City of Lexington" src="https://secure.test.kentucky.gov/Enterprise/demo/lexington/img/Lexington-Logo.png">
+                        <h1 class="hidden-xs">Lexington</h1>
+                    </a>
+                </div>
+                <form class="navbar-form navbar-right navbar-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search Lexington">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <!-- {% include navbar.html %} -->
         </div>
+    </div>
+    <!-- /.container -->
+    <!-- {% include alert.html %} -->
+    <div class="mainContent container">
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Public Safety</a></li>
+            <li class="active">Incident Reports</li>
+        </ol>
+        <div class="row">
+            {% comment %}{% include browse-second-level.html %}{% endcomment %}
+            <div class="col-md-9 col-sm-8">
+                <h1 class="page-title">Incident Reports</h1>
+              <div class="row">
+                <div class="col-sm-6">
+                 <ul class="nav nav-stacked">
+                    <li><a href="#fire-report">Fire Report</a></li>
+                    <li><a href="#crime-report">Crime Report</a></li>
+                    <li><a href="#traffic-report">Traffic Collision (Accident) Reports</a></li>
+                </ul>
+                    </div>
+                </div>
+                <hr />
+                <article class="article-content" id="fire-report">
+                    <header>
+                        <h2>Fire Report</h2>
+                    </header>
+                    <p>Fire reports are available to victims. They may be used to file insurance claims and for other personal uses.</p>
+                    <p>What you will need to get your report:</p>
+                    <ul>
+                        <li>Address</li>
+                        <li>Incident Number (if available)</li>
+                    </ul>
+                    <div class="call-to-action"><i class="fa fa-fire fa-1x fa-fw"></i><a href="#"><b>Request</b> your fire report</a></div>
+                </article>
+                <hr />
+                <article class="article-content" id="crime-report">
+                    <header>
+                        <h2>Crime Report</h2>
+                    </header>
+                    <p>Crime reports are available online to victims. They may be used to file insurance claims and for other personal uses.</p>
+                    <p>What you will need to get your report</p>
+                    <ul>
+                        <li>Case number</li>
+                        <li>Report Date</li>
+                    </ul>
+                    <p><a href="#">Access your crime report online</a></p>
+                </article>
+                <hr />
+                <article class="article-content" id="traffic-report">
+                    <header>
+                        <h2>Traffic Collision (Accident) Reports</h2>
+                    </header>
+                    <p>Traffic collision reports (formerly called accident reports) are available online.</p>
+                    <p>What you will need to get your report:</p>
+                    <ul>
+                        <li>Case Number given to you at the time your report was taken</li>
+                        <li>Report Date</li>
+                        <li>Last Name of the Owner/Driver of the vehicle</li>
+                    </ul>
+                    <p>Use <em>Lexington Police Department</em> as the agency</p>
+                    <div class="call-to-action"><i class="fa fa-car fa-1x fa-fw"></i><a href="#"><b>Access</b>  your traffic collision report online</a></div>
+                </article>
+                <div class="panel panel-default panel-help">
+                    <div class="panel-body text-center">
+                       <h4>Help is available</h4>
 
-      </header>
+<p>If at any point you have questions, please email <a href="#">quickstart@lexingtonky.gov</a> or call 123-123-1234.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Government</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Business
+                            </a>
+                            </li>
 
-      <div class="wrap content">
-
-        {% include sidebar.html %}
-
-        <section id="main" class="main-content" role="main">
-          <h1>{{ page.title }}</h1>
-          {{ content }}
-        </section>
-
-      </div><!-- /.wrap content -->
-
-      {% include footer.html%}
-
-    </div> <!-- /.container -->
-
-    {% include analytics.html %}
-    {% include scripts.html %}
-
-  </body>
+                            <li>
+                                <a href="#">Health
+                            </a>
+                            </li>
+                            <li>
+                                <a href="#">Payments &amp; Taxes
+                            </a>
+                            </li>
+                            <li>
+                                <a href="#">Property & Housing
+                            </a>
+                            </li>
+                            <li>
+                                <a href="#">Public Safety
+                            </a>
+                            </li>
+                            <li>
+                                <a href="#">Recreation
+                            </a>
+                            </li>
+                            <li>
+                                <a href="#">Streets &amp; Utilities
+                            </a>
+                            </li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Services</h3>
+                        <div class="call-to-action"><i class="fa fa-phone fa-1x fa-fw"></i><a href="#"><b>Call 311</b> to report an issue</a></div>
+                        <div class="call-to-action"><i class="fa fa-tree fa-1x fa-fw"></i><a href="#"><b>Find</b> a local park</a></div>
+                        <div class="call-to-action"><i class="fa fa-trash fa-1x fa-fw"></i><a href="#"><b>View</b> waste managment guides</a></div>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <h3>Get In Touch</h3>
+                        <address>
+                            200 E. Main St<br />
+                            Lexington, Kentucky 40507<br />
+                        </address>
+                        <p>
+                            <abbr title="Phone"><i class="fa fa-phone"></i></abbr>
+                            (123) 456-7890
+                        </p>
+                        <ul class="list-cats">
+                            <li><a href="#">Departments</a></li>
+                            <li><a href="#">Mayor's Office</a></li>
+                            <li><a href="#">Phone Directory</a></li>
+                        </ul>
+                        <ul class="list-inline social-links">
+                            <li><a href="http://www.facebook.com/pages/Lexington-KY/191947568058"><i class="fa fa-facebook-square fa-2x"></i></a>
+                            </li>
+                            <li><a href="http://www.twitter.com/LexingtonKyGov"><i class="fa fa-twitter-square fa-2x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <a href="#top" class="back-to-top pull-right"><i class="fa fa-arrow-up"></i>Back to Top</a>
+                <p>&copy; 2015 Lexington-Fayette Urban County Govvernment. All Rights Reserved.</p>
+                <ul class="list-inline">
+                    <li><a href="#">Privacy Statement</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Data Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://secure.test.kentucky.gov/Enterprise/demo/lexington/js/jquery-1.11.1.min.js"></script>
+    <script src="https://secure.test.kentucky.gov/Enterprise/demo/lexington/js/bootstrap.min.js"></script>
+    <script src="https://secure.test.kentucky.gov/Enterprise/demo/lexington/js/jasny-bootstrap.min.js"></script>
+</body>
 
 </html>
