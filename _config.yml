@@ -1,0 +1,60 @@
+baseurl: /content-guide
+markdown: kramdown
+name: City of Lexington Content Guide
+exclude:
+- go
+- copy-template
+- Gemfile
+- Gemfile.lock
+- README.md
+- LICENSE.md
+
+permalink: pretty
+highlighter: pygments
+
+# Author/Organization info to be displayed in the templates
+author:
+  name: 18F
+  url: https://18f.gsa.gov
+
+# Point the logo URL at a file in your repo or hosted elsewhere by your organization
+logourl:
+logoalt:
+
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- text: Introduction
+  url: index.html
+  internal: true
+- text: Numbers
+  url: numbers/
+  internal: true
+- text: Time and Dates
+  url: times-and-dates/
+  internal: true
+- text: Place
+  url: place/
+  internal: true
+- text: Titles
+  url: titles/
+  internal: true
+- text: Acronyms and Abbreviations
+  url: acronyms-and-abbreviations/
+  internal: true
+- text: Addresses
+  url: addresses/
+  internal: true
+- text: Capitalization
+  url: capitalization/
+  internal: true
+
+repos:
+- name: 18F Content Guide
+  description: Main repository
+  url: https://github.com/18F/content-guide
+
+# Style Variables
+brand_color: "#1188ff"
+
+google_analytics_ua: UA-48605964-19
