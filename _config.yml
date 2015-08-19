@@ -1,4 +1,4 @@
-baseurl: /beta
+baseurl: /design-draft
 markdown: kramdown
 name: City of Lexington Content Guide
 exclude:
