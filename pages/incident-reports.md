@@ -1,12 +1,12 @@
 ---
-permalink: incident-report/
+permalink: incident-reports/
 layout: default
 title: Incident Reports
 ---
 
 <ol class="breadcrumb">
     <li><a href="#">Home</a></li>
-    <li><a href="#">Public Safety</a></li>
+    <li><a href="{{ site.baseurl }}/browse/">Public Safety</a></li>
     <li class="active">Incident Reports</li>
 </ol>
 <div class="row">
