@@ -41,12 +41,12 @@ title: Incident Reports
                 <h2>Crime Report</h2>
             </header>
             <p>Crime reports are available online to victims. They may be used to file insurance claims and for other personal uses.</p>
-            <p>What you will need to get your report</p>
+            <p>What you will need to get your report:</p>
             <ul>
                 <li>Case number</li>
                 <li>Report Date</li>
             </ul>
-            <p><a href="#">Access your crime report online</a></p>
+            <div class="call-to-action"><i class="fa fa-copy fa-1x fa-fw"></i><a href="#"><b>Access</b>  crime report online</a></div>
         </article>
         <hr />
         <article class="article-content" id="traffic-report">

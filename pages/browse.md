@@ -55,4 +55,21 @@ title: Browse
           </div>
       </nav>
   </div>
+  <div class="col-md-3 col-sm-4 left-nav hidden-xs">
+      <nav role="navigation">
+          <div class="list-group">
+              <a href="#" class="list-group-item ">
+                  <h4 class="list-group-item-heading">Incident Report</h4>
+              </a>
+              <div style="margin-top: 0.5em;font-weight:bold">
+                {% assign my_array = "Crime Report|Fire Report|Traffic Collision (Accident) Report" | split: "|" %}
+                {% for item in my_array %}
+                  <a href="#" class="list-group-item ">
+                      <p style="font-size:16px; text-decoration:underline" class="list-group-item-text">{{ item }}</p>
+                  </a>
+                {% endfor %}
+              </div>
+          </div>
+      </nav>
+  </div>
 </div>
