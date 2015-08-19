@@ -10,7 +10,7 @@ title: Incident Reports
     <li class="active">Incident Reports</li>
 </ol>
 <div class="row">
-    {% comment %}{% include browse-second-level.html %}{% endcomment %}
+    {% comment %} {% include browse-second-level.html %}{% endcomment %}
     <div class="col-md-9 col-sm-8">
         <h1 class="page-title">Incident Reports</h1>
       <div class="row">
