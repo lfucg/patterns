@@ -6,7 +6,7 @@ title: Browse
 
 <ol class="breadcrumb">
     <li><a href="#">Home</a></li>
-    <li class="active"><a href="{{ site.baseurl}}/browse/">Public Safety</a></li>
+    <li class="active">Public Safety</li>
 </ol>
 
 <div class="row">
