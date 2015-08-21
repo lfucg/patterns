@@ -1,5 +1,5 @@
 ---
-permalink: incident-reports/
+permalink: incident-reports-single-column/
 layout: default
 title: Incident Reports
 ---
@@ -10,7 +10,6 @@ title: Incident Reports
     <li class="active">Incident Reports</li>
 </ol>
 <div class="row">
-    {% include browse-second-level.html %}
     <div class="col-md-9 col-sm-8">
         <h1 class="page-title">Incident Reports</h1>
       <div class="row">

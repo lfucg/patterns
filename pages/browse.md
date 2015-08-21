@@ -6,7 +6,7 @@ title: Browse
 
 <ol class="breadcrumb">
     <li><a href="#">Home</a></li>
-    <li class="active">Public Safety</li>
+    <li class="active"><a href="#">Public Safety</a></li>
 </ol>
 
 <div class="row">
