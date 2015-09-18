@@ -1,6 +1,6 @@
-baseurl: /beta
+baseurl: /patterns
 markdown: kramdown
-name: City of Lexington Content Guide
+name: City of Lexington Patterns
 exclude:
 - go
 - copy-template

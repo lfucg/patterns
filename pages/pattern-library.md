@@ -1,7 +1,7 @@
 ---
 permalink: pattern-library/
 layout: default
-title: City of Lexington Content Guide
+title: Pattern Library
 ---
 
 <div class="panel panel-default panel-example">
